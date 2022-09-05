@@ -203,7 +203,6 @@ button:hover {
     border-radius: 12px;
     margin: 16px;
     display: grid;
-    border: 6px solid red;
 }
 
 .project-container {
