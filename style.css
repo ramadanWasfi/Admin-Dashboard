@@ -13,13 +13,13 @@ body {
  --secondary-color: #6173F4;
  --main-color: #FCEFED;
  --secondary-font-color: #FCEFED;
- --main-font-color: #3B2E40:
+ --main-font-color: #F35E3E:
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 220px 2fr 1fr;
     background-color: var(--main-color);
 }
 
@@ -73,9 +73,9 @@ body {
     grid-column: 2 / 5;
     grid-row: 1 / 2;
     background-color: var(--main-color);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     padding: 24px 48px;
 }
 
@@ -101,7 +101,7 @@ body {
     width: 600px;
     background-color: var(--secondary-font-color);
     border-radius: 18px;
-    background-color: #f5dfdd;
+    background-color: #d0bab8;
 }
 
 #search-icon:hover , #notification-icon:hover{
@@ -178,10 +178,51 @@ button:hover {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
     grid-column: 2 / 4;
-    background-color: #952;
     grid-row: 2 / 4;
+    background-color: #d0bab8;
+
+}
+
+.project {
+    background-color: #F35E3E;
+    border-radius: 12px;
+    margin: 16px;
+    display: flex;
+}
+
+.project-container {
+    background-color: var(--secondary-font-color);
+    margin-left: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info {
+    align-self: start;
+    padding: 32px 32px 16px 32px;
+}
+
+.project-links {
+    align-self: end;
+}
+
+.project-links > img {
+    margin-right: 24px;
+    margin-bottom: 16px;
+}
+
+.project-name {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
 }
 
 .announcements {
