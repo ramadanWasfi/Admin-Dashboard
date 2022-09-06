@@ -20,7 +20,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-columns: 300px 2fr 1fr 1fr;
     grid-template-rows: 220px 1fr 1fr;
     background-color: var(--main-background-color);
 }
@@ -48,7 +48,7 @@ body {
     display: grid;
     grid-template-columns: 32px 1fr;
     justify-items: left;
-    gap: 18px;
+    gap: 12px;
     margin-bottom: 24px;
     align-items: center;
     font-size: 1.3rem;
@@ -188,7 +188,8 @@ button:hover {
     background-color: var(--main-background-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: 32px 1fr;
+    grid-template-rows: 32px 350px;
+    margin-bottom: 96px;
 }
 
 .announcements > p , .trending > p , 
@@ -289,6 +290,7 @@ button:hover {
 .trending-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin: 16px;
     padding: 16px;
     border-radius: 12px;
